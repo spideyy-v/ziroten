@@ -125,7 +125,7 @@
 
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
-          window.location.href = "./dashboard/index.html";
+          window.location.href = "dashboard.html";
         })
         .catch((error) => {
           alert("Login failed: " + error.message);
