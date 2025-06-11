@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maths & Science | Ziro Caves</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="icon" href="logo.png" type="image/png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  font-family: 'lato';
+}
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+      
+    }
+
+    .avatar-img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    .logo-img {
+      height: 40px;
+    }
+
+    .topbar {
+      padding: 0.75rem 1rem;
+      background-color: #212529;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .main-content {
+      padding: 2rem 1rem;
+    }
+
+    .greeting {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 767px) {
+      .greeting {
+        text-align: center;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .greeting {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="topbar" onclick="window.open('dashboard.html')">
+    <img src="bnr.png" alt="Ziro Logo" class="logo-img">
+    <img src="default.png" id="avatar" alt="User Avatar" class="avatar-img" data-bs-toggle="modal" data-bs-target="#profileModal">
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="greeting p-3 text-light bg-dark border border-dark-subtle rounded-3" id="greetingText">Hello!</div>
+    <h2 class="text-center text-decoration-underline">Content Of Study</h2>
+
+    <!-- Tabs & Content here... -->
+
+  <div class="container-fluid">
+    
+        
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="s1-tab" data-bs-toggle="tab" data-bs-target="#s1-tab-pane" type="button" role="tab" aria-controls="s1-tab-pane" aria-selected="true">Maths</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="s2-tab" data-bs-toggle="tab" data-bs-target="#s2-tab-pane" type="button" role="tab" aria-controls="s2-tab-pane" aria-selected="false">Science</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane p-3 fade show active" id="s1-tab-pane" role="tabpanel" aria-labelledby="s1-tab" tabindex="0">
+    <h5 class="text-center fw-bold text-decoration-underline">Chapterwise Videos</h5>
+    
+    <!-- Chapters here.... -->
+    
+    <div class="accordion mt-4" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong>Chapter #1</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Chapter #2</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Chapter #3</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Chapter #4</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Chapter #5</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- Chapters here.... -->
+    
+  </div>
+  <div class="tab-pane p-3 fade" id="s2-tab-pane" role="tabpanel" aria-labelledby="s2-tab" tabindex="0">
+    
+    
+    <h5 class="text-center fw-bold text-decoration-underline">Chapterwise Videos</h5>
+    
+    <!-- Chapters here.... -->
+    
+    <div class="accordion mt-4" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <strong>Chapter #1</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Chapter #2</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Chapter #3</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+        <strong>Chapter #4</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+        <strong>Chapter #5</strong> : Chapter Name
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Tap the buttons given below to <b>Download</b> Lecture wise Videos</strong> <br> <b class="text-center">↓</b> 
+        <br>
+        
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #1</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #2</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #3</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #4</button>
+        <button type="button" class="btn btn-outline-primary m-2 mt-3" onclick="window.open('https://upload.wikimedia.org/wikipedia/commons/f/f3/Download.gif')">Lecture #5</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <!-- Chapters here.... -->
+    
+    
+  </div>
+</div>
+   
+    
+  </div>
+ 
+    <!-- Tabs & Content here... -->
+
+  </div>
+
+  <!-- Profile Modal -->
+  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="profileModalLabel">User Profile</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="userInfo">
+          <!-- User info loaded here -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" onclick="logout()">Logout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase + Bootstrap JS -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-auth.js";
+    import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDeHdZ64xvAxFOjfX68WBIiRhrrRxm6ekc",
+      authDomain: "ziroten-3cc83.firebaseapp.com",
+      projectId: "ziroten-3cc83",
+      storageBucket: "ziroten-3cc83.firebasestorage.app",
+      messagingSenderId: "416676100044",
+      appId: "1:416676100044:web:08b1eae2e0519069c8cf69",
+      measurementId: "G-RXGY6H9CC7"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+
+    function getGreeting() {
+      const hour = new Date().getHours();
+      if (hour < 5) return "Good Night";
+      else if (hour < 12) return "Good Morning";
+      else if (hour < 17) return "Good Afternoon";
+      else if (hour < 20) return "Good Evening";
+      else return "Good Night";
+    }
+
+    onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        const docRef = doc(db, "users", user.uid);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+
+          let avatar = "default.png";
+          if (data.gender === "male") avatar = "male.png";
+          else if (data.gender === "female") avatar = "female.png";
+          document.getElementById("avatar").src = avatar;
+
+          const greetingText = `${getGreeting()}, ${data.fullName}!`;
+          document.getElementById("greetingText").textContent = greetingText;
+
+          document.getElementById("userInfo").innerHTML = `
+            <p><strong>Full Name:</strong> ${data.fullName}</p>
+            <p><strong>Age:</strong> ${data.age}</p>
+            <p><strong>Gender:</strong> ${data.gender}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            <p><strong>Class:</strong> 10th</p>
+          `;
+        } else {
+          alert("Missing user data. Logging out...");
+          logout();
+        }
+      } else {
+        window.location.href = "./login.html";
+      }
+    });
+
+    window.logout = () => {
+      signOut(auth).then(() => {
+        window.location.href = "./login.html";
+      });
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
